@@ -16,6 +16,10 @@ const router = createRouter({
       component: () => import('../components/BlogReadView.vue'),
     },
     {
+      path: '/blogmanagements/blogReadModels',
+      component: () => import('../components/BlogReadModelView.vue'),
+    },
+    {
       path: '/postmanagements/posts',
       component: () => import('../components/ui/PostGrid.vue'),
     },

@@ -26,6 +26,7 @@
                         <tr>
                         <th>Id</th>
                         <th>Name</th>
+                        <th>postId</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -91,6 +92,7 @@
                     <v-card-text>
                         <div>
                             <String label="Name" v-model="selectedRow.name" :editMode="true"/>
+                            <PostId offline label="postId" v-model="selectedRow.postId" :editMode="true"/>
                             <v-divider class="border-opacity-100 my-divider"></v-divider>
                             <v-layout row justify-end>
                                 <v-btn
