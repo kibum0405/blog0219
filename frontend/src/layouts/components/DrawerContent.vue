@@ -20,6 +20,12 @@ import {
                 to: '/blogmanagements/blogReads',
             }"
         />
+        <VerticalNavLink
+            :item="{
+                title: 'BlogReadModel',
+                to: '/blogmanagements/blogReadModels',
+            }"
+        />
         <VerticalNavSectionTitle :item="{ heading: '게시물 관리' }" />
         <VerticalNavLink
             :item="{

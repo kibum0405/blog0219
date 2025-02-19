@@ -1,6 +1,7 @@
 <template>
     <div>
         <String label="Name" v-model="value.name" :editMode="editMode"/>
+        <PostId offline label="postId" v-model="value.postId" :editMode="editMode" @change="change"/>
 
         <v-divider class="border-opacity-100 my-divider"></v-divider>
         <v-layout row justify-end>

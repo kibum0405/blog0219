@@ -20,6 +20,7 @@
                 </v-btn>
             </div>
             <BlogRead @search="search" style="margin-bottom: 10px; background-color: #ffffff;"></BlogRead>
+            <BlogReadModel @search="search" style="margin-bottom: 10px; background-color: #ffffff;"></BlogReadModel>
             <div class="mb-5 text-lg font-bold"></div>
             <div class="table-responsive">
                 <v-table>

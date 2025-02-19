@@ -21,6 +21,9 @@ public class Post {
 
     private String name;
 
+    @Embedded
+    private PostId postId;
+
     public static PostRepository repository() {
         PostRepository postRepository = PostmanagementApplication.applicationContext.getBean(
             PostRepository.class
