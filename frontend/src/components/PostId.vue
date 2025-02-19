@@ -1,16 +1,11 @@
 <template>
-
     <div>
-        <div class="detail-title">
-        PostId
+        <BasePicker v-if="editMode" searchApiPath="posts" searchParameterName="name"  idField="id" nameField="name" path="posts" label="PostId" v-model="value" @selected="pick" :editMode="editMode" />
+        <div v-else style="height:100%">
+            <span>{{ value && value.name ? value.name : '' }}</span>
         </div>
-        <v-col>
-        </v-col>
-
-        <v-card-actions v-if="inList">
-            <slot name="actions"></slot>
-        </v-card-actions>
     </div>
+
 </template>
 
 <script>
@@ -24,7 +19,7 @@ export default {
         BasePicker
     },
     data: () => ({
-        path: '',
+        path: 'posts',
     }),
     props: {
     },

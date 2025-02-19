@@ -41,6 +41,10 @@ export default {
           link: "/blogmanagements/blogReads",
       },
       {
+          text: "BlogReadModel",
+          link: "/blogmanagements/blogReadModels",
+      },
+      {
           text: "게시물",
           link: "/postmanagements/posts",
       },
